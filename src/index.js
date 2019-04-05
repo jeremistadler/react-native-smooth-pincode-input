@@ -92,6 +92,7 @@ class SmoothPinCodeInput extends Component {
       textStyleFocused,
       keyboardType,
       animationFocused,
+      textContentType,
     } = this.props
     const { maskDelay, focused } = this.state
     return (
@@ -165,6 +166,7 @@ class SmoothPinCodeInput extends Component {
           spellCheck={false}
           autoFocus={autoFocus}
           keyboardType={keyboardType}
+          textContentType={textContentType}
           numberOfLines={1}
           maxLength={codeLength}
           selection={{
